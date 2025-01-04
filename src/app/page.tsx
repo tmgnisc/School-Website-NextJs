@@ -3,15 +3,16 @@ import Header from "@/components/Header/Header";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import FeaturesSection from "@/components/HeroSection/FeatureSection";
 import AboutSection from "@/components/AboutSection/AboutSection";
+import ImageCarouselSection from "@/components/ImageCarouselSection/ImageCarouselSection";
 
 export default function Home() {
   return (
     <div>
-      {/* Reusable Header Component */}
       <Header />
-      <HeroSection/>
-      <FeaturesSection/>
-      <AboutSection/>
+      <HeroSection />
+      <FeaturesSection />
+      <AboutSection />
+      <ImageCarouselSection />
     </div>
   );
 }
