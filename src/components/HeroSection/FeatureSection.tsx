@@ -1,14 +1,13 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 const FeaturesSection = () => {
   return (
     <section className="bg-[#FF1493] text-white py-8">
       <div className="container mx-auto flex justify-center items-center space-x-12">
-        {/* Feature 1 */}
         <div className="flex flex-col items-center">
           <Image
-            src="/127.png" // Replace with the path to your first image
+            src="/127.png"
             alt="Experience"
             width={72}
             height={56}
@@ -17,13 +16,11 @@ const FeaturesSection = () => {
           <p className="text-lg font-semibold">EXPERIENCE</p>
         </div>
 
-        {/* Divider */}
         <div className="h-16 w-[2px] bg-white"></div>
 
-        {/* Feature 2 */}
         <div className="flex flex-col items-center">
           <Image
-            src="/37.png" // Replace with the path to your second image
+            src="/37.png"
             alt="Learn"
             width={58}
             height={45}
@@ -32,13 +29,11 @@ const FeaturesSection = () => {
           <p className="text-lg font-semibold">LEARN</p>
         </div>
 
-        {/* Divider */}
         <div className="h-16 w-[2px] bg-white"></div>
 
-        {/* Feature 3 */}
         <div className="flex flex-col items-center">
           <Image
-            src="/49.png" // Replace with the path to your third image
+            src="/49.png"
             alt="Transform"
             width={61}
             height={48}
