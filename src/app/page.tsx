@@ -7,6 +7,8 @@ import ImageCarouselSection from "@/components/ImageCarouselSection/ImageCarouse
 import ExperienceSection from "@/components/ExperienceSection/ExperienceSection";
 import Testimonials from "@/components/testonomials/testimonials";
 import EventsSection from "@/components/EventSection/EventSection";
+import AdmissionSection from "@/components/AdmissionSection/AdmissionSection";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
       <ExperienceSection/>
       <Testimonials/>
       <EventsSection/>
+      <AdmissionSection/>
+      <Footer/>
     </div>
   );
 }
