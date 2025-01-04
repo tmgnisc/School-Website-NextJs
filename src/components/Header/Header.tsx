@@ -8,9 +8,9 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-white shadow-md sticky top-0 z-50">
       <div className="flex justify-between items-center px-6 md:px-12 py-4">
-  
+        {/* Logo */}
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
             <Image
@@ -23,7 +23,7 @@ const Header = () => {
           </Link>
         </div>
 
-  
+        {/* Centered Navigation */}
         <nav className="hidden md:block absolute left-1/2 transform -translate-x-1/2">
           <ul className="flex space-x-8 text-gray-800 font-semibold text-lg">
             <li>
@@ -54,7 +54,7 @@ const Header = () => {
           </ul>
         </nav>
 
-  
+        {/* Hamburger Menu for Mobile */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden text-gray-800 focus:outline-none"
@@ -84,7 +84,7 @@ const Header = () => {
           </svg>
         </button>
 
-   
+        {/* Mobile Menu */}
         {isOpen && (
           <nav className="absolute top-16 left-0 w-full bg-white text-gray-800 py-4">
             <ul className="flex flex-col items-center space-y-4">
